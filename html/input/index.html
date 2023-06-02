@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="kk">
+    <head>
+        <title>&lt;input&gt; – Brand</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="images/logo.png">
+    </head>
+    <body>
+        <div class="background-color">
+            <div>
+                <h1>
+                    <mark>&lt;input&gt;</mark> Tag <abbr title="ағылш."><img id="usa" src="images/usa.png" alt="ағылш."></abbr> <i>"input" — «енгізу»</i>
+                </h1>
+                <dl>
+                    <dt>
+                        <mark>&lt;input&gt;</mark> Tag &#40; <abbr title="ағылшын тілінен"><img id="usa" src="images/usa.png" alt="ағылш."></abbr> <i><b>input — "енгізу"</b></i> &#41;        
+                    </dt>
+                    <dd>
+                        пішіннің жан-жақты элементтерінің бірі болып табылады және интерфейстің әртүрлі бөліктерін құруға және пайдаланушы тәжірибесін қамтамасыз етуге мүмкіндік береді.
+                    </dd>
+                    <p>
+                        <dd>
+                            Негізінен <mark>&lt;input&gt;</mark> мәтін өрістерін, әртүрлі түймелерді, қосқыштарды және құсбелгілерді жасауға арналған.
+                        </dd>
+                    </p>
+                    <p>
+                        <dd>
+                            Элемент түрін анықтайтын <mark>&lt;input&gt;</mark> негізгі төлсипаты-type. Ол Сізге келесі пішін элементтерін орнатуға мүмкіндік береді: мәтін өрісі (text), пароль өрісі (password), қосқыш (radio), құсбелгі, тексеру жәшігі (checkbox), жасырын өріс (hidden), батырма (button), пішінді жіберу түймесі (submit), пішінді тазарту түймесі (reset), файлды жіберу өрісі (file), кескін түймесі (image) және т.б. әр элемент үшін оның түрі мен сипаттамаларын анықтайтын атрибуттардың жеке тізімі бар. Сонымен қатар, HTML5-те оннан астам жаңа атрибуттар қосылды.
+                        </dd>
+                    </p>
+                </dl>
+            </div>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Forms
+                    </div>
+                    <div class="accordion__body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="button.html" target="_blank"><mark>&lt;/button&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="datalist.html" target="_blank"><mark>&lt;/datalist&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="fieldset.html" target="_blank"><mark>&lt;/fieldset&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="form.html" target="_blank"><mark>&lt;/form&gt;</mark></a>
+                                </td>
+                                <td>
+                                    <a href="input.html" target="_blank"><mark>&lt;/input&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="label.html" target="_blank"><mark>&lt;/label&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="legend.html" target="_blank"><mark>&lt;/legend&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="meter.html" target="_blank"><mark>&lt;/meter&gt;</mark></a>
+                                </td>
+                                <td>
+                                    <a href="optgroup.html" target="_blank"><mark>&lt;/optgroup&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="option.html" target="_blank"><mark>&lt;/option&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="output.html" target="_blank"><mark>&lt;/output&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="progress.html" target="_blank"><mark>&lt;/progress&gt;</mark></a>
+                                </td>
+                                <td>
+                                    <a href="select.html" target="_blank"><mark>&lt;/select&gt;</mark></a>
+                                    <br>
+                                    <br>
+                                    <a href="textarea.html" target="_blank"><mark>&lt;/textarea&gt;</mark></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="background-color">
+            <h1>Syntax</h1>
+            <div class="color-code">
+                <code>
+<pre>
+&lt;<span class="color-html">input</span>&gt;
+</pre>
+                </code>
+            </div>
+            <br>
+            <div>
+                <abbr title="Жабу тегі талап етілмейді.">&lt;input&gt;</abbr> жұпсыз tag 
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="background-color">
+            <div>
+                <h1>Attributes</h1>
+                Бұл элемент үшін <a href="">әмбебап атрибуттар</a> қол жетімді.
+            </div>
+            <br>
+            <br>
+            <div class="accept">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>accept</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Файлды жүктеу өрісі арқылы жіберуге болатын файл түрлеріне сүзгіні орнатады. Файл түрі MIME түрі ретінде көрсетіледі, бірнеше мәндерде олар үтірмен тізімделеді. Егер файл орнатылған сүзгіге сәйкес келмесе, ол файл таңдау терезесінде көрсетілмейді.                                
+                                </dd>
+                                <dd>
+                                    Файлды жіберу үшін өріске қолданылады (<mark>&lt;input type="file"&gt;</mark>).
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="file" <span class="color-attributes">accept</span>="MIME-түріні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген регистрдегі MIME түрінің атауы, бірнеше мәндер үтір арқылы тізімделеді.
+                            <br>
+                            HTML5-те барлық дыбыстық файлдарды таңдау үшін <mark>audio/*</mark>, бейне файлдар үшін <mark>video/*</mark>> және барлық графикалық файлдар үшін <mark>image/*</mark> мәні ретінде көрсетуге болады.
+                            <br>
+                            <a href="" target="_blank"><mark>MIME файл түрлерінің тізімі.</mark></a>
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="alt">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>alt</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    <mark>alt</mark> атрибуты кескін өрісі үшін балама мәтінді орнатады. Мұндай мәтін браузерде суреттерді жүктеу кезінде сурет туралы мәтіндік ақпаратты алуға мүмкіндік береді, сонымен қатар іздеу жүйелеріне арналған.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="image" <span class="color-attributes">alt</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген қолайлы мәтін жолы.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="autocomplete">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>autocomplete</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Бұл атрибут пішін өрістерін бұрын енгізілген мәтінмен толтыруға көмектеседі. Мәндер браузерді сақтайды және ауыстырады, ал қауіпсіздік мақсатында автотолтыру браузер параметрлерінде өшірілуі мүмкін және бұл жағдайда autocomplete атрибутымен басқарыла алмайды.
+                                </dd>
+                                <dd>
+                                    Мәтіннің бірінші әріптерін енгізген кезде, сіз қажетті мәндерді таңдауға болатын бұрын сақталған мәндердің тізімі көрсетіледі.
+                                </dd>
+                                <dd>
+                                    Пішіннің нақты өрісін автотолтыру оның атрибутына қосылады және мән өзгерген кезде жоғалады.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="password" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="email" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="search" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="url" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="tel" <span class="color-attributes">autocomplete</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>on</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Мәтінді автоматты түрде толтыруды қамтиды.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>off</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Автотолтыруды өшіреді. Бұл мән әдетте браузерде маңызды деректерді (парольдер, банк карталарының нөмірлері), сондай-ақ сирек енгізілетін немесе бірегей деректерді (captcha) сақтауды болдырмау үшін қолданылады.
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            Браузер параметрлеріне байланысты.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="autofocus">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>autofocus</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өрісіне фокусты автоматты түрде орнатады. Бұл өрісте сіз оны тінтуірдің курсорымен анық баспай-ақ бірден тере аласыз.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">autofocus</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша, <mark>autofocus</mark> төлсипаты орнатылмаған.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="checked">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>checked</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Бұл атрибут құсбелгі немесе қосқыш сияқты пішін элементінің алдын-ала белгіленгенін анықтайды. Қосқыштарды қолданған жағдайда (radiobutton) топтың тек бір элементін белгілеуге болады, құсбелгілер үшін (checkbox) кем дегенде барлық элементтерді белгілеуге рұқсат етіледі.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="radio" <span class="color-attributes">checked</span>&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="checkbox" <span class="color-attributes">checked</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="dirname">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>dirname</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Егер <mark>dirname</mark> атрибуты болса, серверге атау/мән жұбы жіберіледі, онда атау <mark>dirname</mark> атрибутымен көрсетіледі, ал мән браузермен ауыстырылады. Солдан оңға қарай мәтін үшін мән <mark>ltr</mark>, ал оңнан солға қарай мәтін үшін (мысалы, Иврит) мән <mark>rtl</mark> болады.                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">dirname</span>="строка"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="search" <span class="color-attributes">dirname</span>="строка"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Произвольная текстовая строка, которая служит именем параметра. Чтобы показать, что этот параметр указывает направление текста, обычно в конце строки добавляют <mark>.dir</mark>.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="disabled">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>disabled</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өрісіне кіруді және өзгертуді блоктайды. Бұл жағдайда ол сұр болып көрінеді және оны іске қосу үшін пайдаланушы қол жетімді емес. Сонымен қатар, мұндай өріс Tab пернесін, тінтуірді немесе басқа әдісті басу арқылы фокусты ала алмайды. Дегенмен, өрістің бұл күйін сценарийлердің көмегімен өзгертуге болады. Өрістегі бұғатталған мән серверге берілмейді.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">disabled</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="form">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>form</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Өрісті оның идентификаторы бойынша формамен байланыстырады. Мұндай байланыс өріс <mark>form</mark> шегінен тыс орналасқан жағдайда, мысалы, оны бағдарламалық түрде немесе дизайн себептері бойынша жасаған кезде қажет.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="тип" <span class="color-attributes">form</span>="идентификатор"&gt;
+&lt;form id="идентификатор"&gt;...&lt;/form&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Пішін идентификаторы (<mark>&lt;form&gt;</mark> элементінің <mark>id</mark> төлсипатының мәні).
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="formaction">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>formaction</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өңдегішінің мекен — жайын анықтайды-бұл пішін деректерін алатын және олармен қажетті әрекеттерді жасайтын бағдарлама. <mark>formaction</mark> атрибутының әрекеті <a href="/form.html" target="_blank"><mark>&lt;/form&gt;</mark></a> элементінің <mark>action</mark> атрибутына ұқсас.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="submit" <span class="color-attributes">formaction</span>="адрес"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="formenctype"> 
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>formenctype</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Серверге жіберілген кезде форма деректерін кодтау әдісін орнатады. Әдетте файлды жіберу үшін өріс қолданылған жағдайда нақты көрсетіледі (<mark>input type="file"</mark>). Бұл атрибут <a href="" target="_blank"><mark>&lt;/form&gt;</mark></a> элементінің <mark>enctype</mark> атрибутына ұқсас, <mark>formenctype</mark> және <mark>enctype</mark> ортақ пайдалану кезінде соңғысы еленбейді.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="submit" <span class="color-attributes">formenctype</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>application/x-www-form-urlencoded</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бос орындардың орнына <mark>+</mark>, орыс әріптері сияқты таңбалар он алтылық мәндермен кодталады (мысалы, <mark>%D0%9F%D0%B5%D1%82%D1%8F</mark> Петя орнына).
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>multipart/form-data</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Деректер кодталмайды. Бұл мән файлдарды жіберу кезінде қолданылады.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>text/plain </mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бос орындар <mark>+</mark> белгісімен ауыстырылады, әріптер мен басқа таңбалар кодталмайды.
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <mark>application/x-www-form-urlencoded</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <hr>
+            <div class="formmethod">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>formmethod</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Атрибут браузерге форма деректерін серверге қандай әдіспен жіберу керектігін айтады.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="submit" <span class="color-attributes">formmethod</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>get</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бұл әдіс сұрау белгісінен кейін беттің мекен-жайына қосылатын және амперсандпен (<mark>&</mark>символы) бөлінетін <mark>"атау=мән"</mark> жұбы түрінде мекен-жай жолына тікелей форма деректерін жіберуге арналған. Мысалы, толық мекен-жайы болады <mark>http://site.ru/doc/?name=Vasya&password=pup</mark>. әдістегі деректер көлемі 4 Кб-мен шектелген.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>post</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Серверге браузер сұрауында деректерді жібереді, жіберілетін деректердің көлемі тек сервер баптауларымен шектеледі.
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <mark>get</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <hr>
+            <div class="formnovalidate">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>formnovalidate</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішінді жібермес бұрын Пайдаланушы енгізген мәліметтерді дұрыс нысанда тексеруді болдырмайды. Мұндай тексеруді браузер <mark class="current-tags">&lt;input type="email"&gt;</mark>, <mark class="current-tags">&lt;input type="url"&gt;</mark> өрістері үшін, сондай-ақ <mark class="current-tags">&lt;input&gt;</mark> элементінде <mark>pattern</mark> немесе <mark>required</mark> төлсипаты болған кезде автоматты түрде жасайды.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="submit" <span class="color-attributes">formnovalidate</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="formtarget">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>formtarget</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    HTML құжаты ретінде пішін өңдегіші қайтарған нәтиже жүктелетін кадрдың атын анықтайды.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="submit" <span class="color-attributes">formtarget</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>_blank</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бетті жаңа шолғыш қойындысына жүктейді.                                        
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>_self</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бетті ағымдағы қойындыға жүктейді.                                        
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>_parent </mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Бетті ата-ана жақтауына жүктейді; егер жақтаулар болмаса, онда бұл мән <mark>_self</mark> ретінде жұмыс істейді.                                        
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>_top</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Барлық Жақтауларды болдырмайды және бетті толық шолғыш терезесінде жүктейді; егер жақтаулар болмаса, онда бұл мән <mark>_self</mark> ретінде жұмыс істейді.                                        
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <mark>_self</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="list">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>list</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Теру кезінде таңдауға болатын <a href="/datalist.html" target="_blank"><mark>&lt;/datalist&gt;</mark></a> элементі арқылы жасалған опциялар тізімін көрсетеді. Бастапқыда бұл тізім жасырын және фокус өрісін алған кезде қол жетімді болады.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">list</span>="идентификатор"&gt;
+&lt;datalist id="идентификатор"&gt;
+    &lt;option value="Текст1"&gt;
+        ...
+    &lt;/option&gt;
+    &lt;option value="Текст2"&gt;
+        ...
+    &lt;/option&gt;
+&lt;/datalist&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Элемент идентификаторының аты <mark>datalist</mark>.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="max">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>max</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өрісіне санды немесе күнді енгізу үшін жоғарғы мәнді орнатады.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="number" <span class="color-attributes">max</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="range" <span class="color-attributes">max</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="date" <span class="color-attributes">max</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Бүтін оң немесе теріс сан (<mark>type="number"</mark>, <mark>type="range"</mark> үшін).
+                            <br>
+                            <mark>type="date"</mark> үшін ЖЖЖЖ-ММ-КК форматындағы күн (мысалы: 2012-12-22).
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="maxlength">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>maxlength</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пайдаланушы мәтін жолағына енгізе алатын таңбалардың максималды санын белгілейді. Бұл санға теру кезінде қол жеткізілгенде, одан әрі енгізу мүмкін болмайды.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">maxlength</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="password" <span class="color-attributes">maxlength</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген бүтін оң Сан.
+                        </td>
+                        <td>
+                            Таңбаларды енгізу шектеусіз.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="min">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>min</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өрісіне нөмірді немесе күнді енгізу үшін төменгі мәнді орнатады.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="number" <span class="color-attributes">min</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="range" <span class="color-attributes">min</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="date" <span class="color-attributes">min</span>="мәні&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Бүтін оң немесе теріс сан (<mark>type="number"</mark>, <mark>type="range"</mark> үшін).
+                            <br>
+                            <mark>type="date"</mark> үшін ЖЖЖЖ-ММ-КК форматындағы күн (мысалы: 2012-12-22).
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="minlength">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>minlength</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Жылжымайтын мүлік символдардың ең аз саны, ол мүмкін іске қосылды пайдаланушы мәтіндік өріс. Егер таңбалар саны көрсетілген мәннен аз болса, онда браузер қате туралы хабарлама береді және пішінді жібермейді.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">minlength</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="password" <span class="color-attributes">minlength</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген бүтін оң Сан.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="multiple">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>multiple</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    <mark>multiple</mark> төлсипаты файлдарды, сондай-ақ бірнеше электрондық пошта мекенжайларын жүктеуге арналған өрісте бір уақытта бірнеше файлды көрсетуге мүмкіндік береді. Екі немесе одан да көп Пошта мекен-жайларын пайдаланған кезде олар үтір арқылы тізімделуі керек.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="file" <span class="color-attributes">multiple</span>&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="email" <span class="color-attributes">multiple</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша <mark>multiple</mark> төлсипаты өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="name">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>name</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін элементінің ерекше атауын анықтайды. Әдетте, бұл атау серверге деректерді жібергенде немесе сценарийлер арқылы енгізілген өріс деректеріне кіру үшін қолданылады.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">name</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Атау ретінде таңбалар жиынтығы, оның ішінде сандар мен әріптер қолданылады. <a href="" title="JavaScript">JS</a> регистрге сезімтал, сондықтан аты бойынша элементпен байланысқан кезде <mark>name</mark> атрибутындағыдай жазу формасын сақтаңыз.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="pattern">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>pattern</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін өрісіне деректерді енгізу және тексеру қажет болатын тұрақты өрнекті көрсетеді. Егер <mark>pattern</mark> төлсипаты болса, өріс дұрыс толтырылғанша пішін жіберілмейді.                                
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="email" <span class="color-attributes">pattern</span>="выражение&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="tel" <span class="color-attributes">pattern</span>="выражение"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">pattern</span>="выражение"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="search" <span class="color-attributes">pattern</span>="выражение"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="url" <span class="color-attributes">pattern</span>="выражение"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tabs-1" id="tabs-1">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <h3>
+                                                <dd>
+                                                    Кейбір типтік тұрақты тіркестер кестеде келтірілген. 1.
+                                                </dd>
+                                            </h3>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <caption>
+                                                    <h2>
+                                                        Кесте. 1. Тұрақты өрнектер
+                                                    </h2>
+                                                </caption>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                          <th>Мән</th>
+                                          <th>Сипаттамасы</th>
+                                        </tr>
+                                        <tr>
+                                          <td><dt><mark>\d [0-9]</mark></dt></td>
+                                          <td><dd>Бір сан 0-ден 9-ға дейін.</dd></td>
+                                        </tr>
+                                        <tr>
+                                          <td><dt><mark>\D [^0-9]</mark></dt></td>
+                                          <td><dd>Саннан басқа кез-келген таңба.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>\s</mark></dt></td>
+                                            <td><dd>Бос орын.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[A-Z]</mark></dt></td>
+                                            <td><dd>Тек бас латын әрпі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[A-Za-z]</mark></dt></td>
+                                            <td><dd>Кез-келген регистрдегі латын әрпі ғана.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[А-Яа-яЁё]</mark></dt></td>
+                                            <td><dd>Кез-келген тізілімдегі тек орыс әрпі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[A-Za-zА-Яа-яЁё]</mark></dt></td>
+                                            <td><dd>Орыс және латын әліпбиінің кез келген әрпі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[0-9]{3}</mark></dt></td>
+                                            <td><dd>Үш сан.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[A-Za-z]{6,}</mark></dt></td>
+                                            <td><dd>Кемінде алты латын әрпі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[0-9]{,3}</mark></dt></td>
+                                            <td><dd>Үш саннан артық емес.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[0-9]{5,10}</mark></dt></td>
+                                            <td><dd>Бес-он сан.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>^[a-zA-Z]+$</mark></dt></td>
+                                            <td><dd>Латын тіліндегі кез келген сөз.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>^[А-Яа-яЁё\s]+$</mark></dt></td>
+                                            <td><dd>Орыс тіліндегі кез-келген сөз, оның ішінде Бос орындар.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>^[ 0-9]+$</mark></dt></td>
+                                            <td><dd>Кез келген саны.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>[0-9]{6}</mark></dt></td>
+                                            <td><dd>Пошталық индексі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>\d+(,\d{2})?</mark></dt></td>
+                                            <td><dd>1,34 форматындағы Сан (үтір бөлгіш).</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>\d+(\.\d{2})?</mark></dt></td>
+                                            <td><dd>2.10 форматындағы Сан (нүкте бөлгіш).</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}</mark></dt></td>
+                                            <td><dd>IP мекенжайы.</dd></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="placeholder">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>placeholder</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Фокусты алған кезде немесе теру кезінде жоғалып кететін пішін өрісіндегі мәтінді көрсетеді. Әдетте сұр түспен көрсетіледі.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">placeholder</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Мәтін жолы. Егер жол ішінде бос орын болса, оны екі немесе бір тырнақшаға алу керек.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="readonly">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>readonly</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    <mark class="current-tags">&lt;input&gt;</mark> элементіне <mark>readonly</mark> төлсипаты қосылған кезде, пайдаланушы мәтін өрісін өзгерте алмайды, оның ішінде жаңа мәтін енгізілмейді немесе бар мәтін өзгертілмейді. Алайда, өрістің күйі мен мазмұнын сценарийлер арқылы өзгертуге болады және деректер серверге жіберіледі.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-html">readonly</span>&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="password" <span class="color-html">readonly</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="required">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>required</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Нысанды серверге жібермес бұрын толтыру үшін міндетті форма өрісін орнатады. Егер міндетті өріс бос болса, шолғыш қате туралы хабарлама шығарады және форма жіберілмейді. Хабарламаның түрі мен мазмұны браузерге байланысты және пайдаланушы өзгерте алмайды.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">required</span>&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша, <mark>required</mark> атрибут өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="size">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>size</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Моно-шрифт таңбаларының санымен анықталатын мәтін өрісінің ені. Басқаша айтқанда, ені көлденең ені бірдей жақын әріптердің санымен анықталады. Егер қаріп өлшемі стильдермен өзгертілсе, ені де сәйкесінше өзгереді.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="text" <span class="color-attributes">size</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="password" <span class="color-attributes">size</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген бүтін оң Сан.
+                        </td>
+                        <td>
+                            <mark>20</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="src">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>src</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Кескін өрісіндегі веб-бетте көрсетілетін графикалық файлдың мекен-жайы. PNG және JPEG форматындағы ең танымал файлдар.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="image" <span class="color-attributes">src</span>="адрес"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Файлға толық немесе салыстырмалы жол мән ретінде қабылданады.
+                        </td>
+                        <td>
+                            Жоқ.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="step">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>step</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Жүгірткілер мен сандарды енгізу өрістері үшін санды өзгерту қадамын орнатады.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="number" <span class="color-attributes">step</span>="мәні"&gt;
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="range" <span class="color-attributes">step</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген бүтін немесе бөлшек сан.
+                        </td>
+                        <td>
+                            <mark>1</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="type">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>type</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Пішін элементі қай түрге жататынын браузерге хабарлайды.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">type</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tabs-1" id="tabs-1">
+                                <table>
+                                    <!-- <thead>
+                                        <tr>
+                                            <h3>
+                                                <dd>
+                                                </dd>
+                                            </h3>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <caption>
+                                                    <h2>
+                                                        <mark>type</mark> мәндері:
+                                                    </h2>
+                                                </caption>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <!-- <tr>
+                                          <th>Мән</th>
+                                          <th>Сипаттамасы</th>
+                                        </tr> -->
+                                        <tr>
+                                          <td><dt><mark>button</mark></dt></td>
+                                          <td><dd>Түйме.</dd></td>
+                                        </tr>
+                                        <tr>
+                                          <td><dt><mark>checkbox</mark></dt></td>
+                                          <td><dd>Жалаушалар. Ұсынылған нұсқалардан бірнеше нұсқаны таңдауға мүмкіндік береді.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>file</mark></dt></td>
+                                            <td><dd>Серверге жіберілетін файл атауын енгізу өрісі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>hidden</mark></dt></td>
+                                            <td><dd>Жасырын өріс. Ол веб-бетте көрсетілмейді.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>image</mark></dt></td>
+                                            <td><dd>Суреті бар өріс. Суретті басқан кезде бұл пішіндер серверге жіберіледі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>password</mark></dt></td>
+                                            <td><dd>Кәдімгі мәтін өрісі, бірақ одан барлық таңбалар жұлдызшалармен көрсетілетіндігімен ерекшеленеді. Енгізілген парольді ешкім көрмейтіндей етіп жасалған.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>radio</mark></dt></td>
+                                            <td><dd>Қосқыштар. Ұсынылған бірнеше нұсқаның біреуін таңдаған кезде қолданылады.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>reset</mark></dt></td>
+                                              <td><dd>Пішін деректерін бастапқы мәнге қайтаруға арналған батырма.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>submit</mark></dt></td>
+                                              <td><dd>Пішін деректерін серверге жіберуге арналған батырма.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>text</mark></dt></td>
+                                              <td><dd>Мәтін өрісі. Пернетақтаны пайдаланып таңбаларды енгізуге арналған.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark></mark></dt></td><!-- HTML5 -->
+                                            <td class="bold color-html" ><dd>HTML5 Жаңа мәндерді қосты:</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>color</mark></dt></td>
+                                            <td><dd>Түсті таңдауға арналған Виджет.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>date</mark></dt></td>
+                                            <td><dd>Күнтізбелік күнді таңдау өрісі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>datetime</mark></dt></td>
+                                              <td><dd>Күні мен уақытын көрсету.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>datetime-local</mark></dt></td>
+                                              <td><dd>Жергілікті күн мен уақытты көрсету.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>email</mark></dt></td>
+                                              <td><dd>Электрондық пошта мекенжайлары үшін.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>number</mark></dt></td>
+                                            <td><dd>Іске қосу сандар.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>range</mark></dt></td>
+                                            <td><dd>Көрсетілген диапазондағы сандарды таңдауға арналған жүгірткі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>search</mark></dt></td>
+                                              <td><dd>Іздеу өрісі.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>tel</mark></dt></td>
+                                              <td><dd>Телефон нөмірлері үшін.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>time</mark></dt></td>
+                                              <td><dd>Уақыт үшін.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>url</mark></dt></td>
+                                            <td><dd>Веб-мекенжайлар үшін.</dd></td>
+                                        </tr>
+                                        <tr>
+                                            <td><dt><mark>month</mark></dt></td>
+                                            <td><dd>Айды таңдау.</dd></td>
+                                        </tr>
+                                        <tr>
+                                              <td><dt><mark>week</mark></dt></td>
+                                              <td><dd>Апта таңдау.</dd></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <mark>text</mark>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="value">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>value</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Серверге жіберілетін немесе клиенттік сценарийлер арқылы алынатын пішін элементінің мәнін анықтайды. Серверге "<mark>атау=мән</mark>" жұбы жіберіледі, онда атау <mark class="current-tags">&lt;input&gt;</mark> элементінің <mark>name</mark> төлсипатымен, ал <mark>value</mark> төлсипатымен беріледі.
+                                </dd>
+                                <dd>
+                                    Элемент түріне байланысты <mark>value</mark> атрибуты келесі рөл атқарады:
+                                </dd>
+                                <dd>
+                                    батырмалар үшін (<mark>input type="button | reset | submit"</mark>) оларға мәтіндік жазба орнатады;
+                                </dd>
+                                <dd>
+                                    Мәтін өрістері үшін (<mark>input type="password | text"</mark>) алдын-ала енгізілген жолды көрсетеді. Пайдаланушы мәтінді өшіре алады және оның таңбаларын енгізе алады, бірақ Reset батырмасы түрінде қолданылған кезде, <mark>value</mark> төлсипатына енгізілген жеке мәтін тазаланады және қалпына келтіріледі;
+                                </dd>
+                                <dd>
+                                    ұяшықтар мен қосқыштар үшін (<mark>input type="checkbox | radio"</mark>) әр элементті бірегей түрде анықтайды, осылайша клиент немесе сервер бағдарламасы пайдаланушының қай элементті таңдағанын анықтай алады.
+                                </dd>
+                                <dd>
+                                    файл өрісі үшін (<mark>input type="file"</mark>) әсер етпейді.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="syntax">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+&lt;<span class="color-html">input</span> <span class="color-attributes">value</span>="мәні"&gt;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Кез келген мәтін жолы.
+                        </td>
+                        <td>
+                            Жоқ
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
