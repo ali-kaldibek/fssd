@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kk">
+    <head>
+        <title>@namespace – Brand</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/css/index.css">
+        <link rel="icon" href="/css/images/logo.png">
+    </head>
+    <body>
+        <div class="background-color">
+            <div>
+                <dl>
+                    <dd>
+                        <mark>@namespace</mark>-стиль кестесінде қолданылатын XML аттар кеңістігін анықтайтын ережелер. Олар CSS таңдаушыларын белгілі бір аттар кеңістігіне жататын элементтермен шектеу үшін қолданылады. Namespace ' s негізінен SVG, MathML немесе XML-мен HTML5 сияқты көптеген атаулардан тұратын құжаттармен өзара әрекеттесу болған кезде пайдалы.
+                    </dd>
+                    <p>
+                        <dd>
+                        </dd>
+                    </p>
+                </dl>
+            </div>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        @rules and modifiers
+                    </div>
+                    <div class="accordion__body">
+                        <p>
+                            <a href="/css/charset" target="_blank"><mark>@charset</mark></a>
+                            <a href="/css/import" target="_blank"><mark>@import</mark></a>
+                            <a href="/css/namespace" target="_blank"><mark>@namespace</mark></a>
+                            <a href="/css/media" target="_blank"><mark>@media</mark></a>
+                            <a href="/css/supports" target="_blank"><mark>@supports</mark></a>
+                            <a href="/css/document" target="_blank"><mark>@document</mark></a>
+                            <a href="/css/page" target="_blank"><mark>@page</mark></a>
+                            <a href="/css/font-face" target="_blank"><mark>@font-face</mark></a>
+                            <a href="/css/keyframes" target="_blank"><mark>@keyframes</mark></a>
+                            <a href="/css/viewport" target="_blank"><mark>@viewport</mark></a>
+                            <a href="/css/counter-style" target="_blank"><mark>@counter-style</mark></a>
+                            <a href="/css/font-feature-values" target="_blank"><mark>@font-feature-values</mark></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-color">
+            <h1>Syntax</h1>
+            <div class="color-code">
+                <code>
+<pre>
+@namespace url('http://www.w3.org/1999/xhtml');
+@namespace svg url('http://www.w3.org/2000/svg');
+
+/* This matches all XHTML &lt;a&gt; elements, as XHTML is the default unprefixed namespace */
+a {
+}
+
+/* This matches all SVG &lt;a&gt; elements */
+svg|a {
+}
+
+/* This matches both XHTML and SVG &lt;a&gt; elements */
+*|a {
+}
+</pre>
+                </code>
+            </div>
+        </div>
+        <script src="/css/js/index.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="kk">
+    <head>
+        <title>@page – Brand</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/css/index.css">
+        <link rel="icon" href="/css/images/logo.png">
+    </head>
+    <body>
+        <div class="background-color">
+            <div>
+                <dl>
+                    <dd>
+                        <mark>@page</mark> ережесі құжатты басып шығару кезінде CSS-тің кейбір қасиеттерін өзгерту үшін қолданылады. <mark>@page</mark> көмегімен барлық CSS сипаттарын өзгерте алмайсыз. Сіз тек margin, orphans, widows және құжат бетінің үзілістерін өзгерте аласыз. CSS-тің басқа қасиеттерін өзгерту әрекеттері еленбейді.
+                    </dd>
+                    <p>
+                        <dd>
+                            <mark>@page</mark> ережесі CSS CSSPageRule нысан моделінің интерфейсі арқылы қол жетімді.
+                        </dd>
+                    </p>
+                </dl>
+            </div>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        @rules and modifiers
+                    </div>
+                    <div class="accordion__body">
+                        <p>
+                            <a href="/css/charset" target="_blank"><mark>@charset</mark></a>
+                            <a href="/css/import" target="_blank"><mark>@import</mark></a>
+                            <a href="/css/namespace" target="_blank"><mark>@namespace</mark></a>
+                            <a href="/css/media" target="_blank"><mark>@media</mark></a>
+                            <a href="/css/supports" target="_blank"><mark>@supports</mark></a>
+                            <a href="/css/document" target="_blank"><mark>@document</mark></a>
+                            <a href="/css/page" target="_blank"><mark>@page</mark></a>
+                            <a href="/css/font-face" target="_blank"><mark>@font-face</mark></a>
+                            <a href="/css/keyframes" target="_blank"><mark>@keyframes</mark></a>
+                            <a href="/css/viewport" target="_blank"><mark>@viewport</mark></a>
+                            <a href="/css/counter-style" target="_blank"><mark>@counter-style</mark></a>
+                            <a href="/css/font-feature-values" target="_blank"><mark>@font-feature-values</mark></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-color">
+            <h1>Syntax</h1>
+            <div class="color-code">
+                <code>
+<pre>
+@page {
+    margin: 1cm;{
+  }
+  
+  @page :first {
+    margin: 2cm;
+  }
+}
+</pre>
+                </code>
+            </div>
+        </div>
+        <div class="background-color">
+            <div class="size">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>size</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Блоктағы бет өрістерінің мақсатты өлшемі мен бағытын көрсетеді. Жалпы жағдайда, парақтың бір өрісі парақтың бір парағында көрсетілген кезде, ол парақтың өлшемі мен бағытын анықтайды.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="color-code">
+                        <code>
+<pre>
+/* Keyword values for scalable size */
+size: auto;
+size: portrait;
+size: landscape;
+
+/* &lt;length&gt; values */
+/* 1 value: height = width */
+size: 6in;
+
+/* 2 values: width then height */
+size: 4in 6in;
+
+/* Keyword values for absolute size */
+size: A4;
+size: B5;
+size: JIS-B4;
+size: letter;
+
+/* Mixing size and orientation */
+size: A4 portrait;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>auto</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Браузер парақтың өлшемін өзі таңдайды.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>landscape</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Беттің мазмұны ландшафт бағдарында көрсетіледі
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>portrait</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Беттің мазмұны портрет режимінде көрсетіледі. Бұл әдепкі бағдар.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>&lt;length&gt;</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Кез келген ұзындық мәні. Бірінші мән беттің жиегінің еніне сәйкес келеді, ал екіншісі оның биіктігіне сәйкес келеді. Егер тек бір мән көрсетілсе, ол ені мен биіктігі үшін де қолданылады.
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>&lt;page-size&gt;</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            <mark>A5</mark> (148mm x 210mm), <mark>A4</mark> (210mm x 297mm), <mark>A3</mark> (297mm x 420mm), <mark>B5</mark> (176mm x 250mm), <mark>B4</mark> (250mm x 353mm), <mark>JIS-B5</mark> (182mm x 257mm), <mark>JIS-B4</mark> (257mm x 364mm), <mark>letter</mark> (8.5in x 11in), <mark>legal</mark> (8.5in x 14in), <mark>ledger</mark> (11in x 17in).
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="marks">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>marks</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Құжатқа кесу және / немесе тіркеу белгілерін қосады.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="color-code">
+                        <code>
+<pre>
+@page {
+    /* Keyword values */
+    marks: none;
+    marks: crop;
+    marks: cross;
+    marks: crop cross;
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>crop</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Кесуге арналған белгілер басылады
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>cross</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Кресттер басып шығарылады
+                                        </dd>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <dt>
+                                            <mark>none</mark>
+                                        </dt>
+                                    </th>
+                                    <th>
+                                        <dd>
+                                            Ешқандай белгілер басылмайды
+                                        </dd>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bleed">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>bleed</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Беттің көрсетілетін аймағы кесілетін беттің шетінен тыс түсу дәрежесін анықтайды.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="color-code">
+                        <code>
+<pre>
+/* Keyword values */
+bleed: auto;
+
+/* &lt;length&gt; values */
+bleed: 8pt;
+bleed: 1cm;
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="/css/js/index.js"></script>
+    </body>
+</html>
