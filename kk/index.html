@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="kk">
+    <head>
+        <title>Brand</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="icon" href="images/un-logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create a column layout with Flexbox */
+            .row {
+                display: flex;
+            }
+
+            /* Left column (menu) */
+            .left {
+                flex: 35%;
+                padding: 15px 0;
+            }
+
+            .left h2 {
+                padding-left: 8px;
+            }
+
+            /* Right column (page content) */
+            .right {
+                flex: 65%;
+                padding: 15px;
+            }
+
+            /* Style the search box */
+            #mySearch {
+                width: 100%;
+                font-size: 18px;
+                padding: 11px;
+                border: 1px solid #ddd;
+            }
+
+            /* Style the navigation menu inside the left column */
+            #myMenu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #myMenu li a {
+                padding: 12px;
+                text-decoration: none;
+                color: #000;
+                display: block;
+            }
+
+            #myMenu li a:hover {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Search Menu</h2>
+        <p>
+            Start to type for a specific category inside the search bar to
+            "filter" the search options.
+        </p>
+
+        <div class="row">
+            <div class="left" style="background-color: #bbb">
+                <h2>Menu</h2>
+                <input
+                    type="text"
+                    id="mySearch"
+                    onkeyup="myFunction()"
+                    placeholder="Search.."
+                    title="Type in a category"
+                />
+
+                <ul id="myMenu">
+                    <li
+                        class="md-nav__item md-nav__item--active md-nav__item--nested"
+                    >
+                        <div class="md-nav__link md-nav__link--index">
+                            <a href="../">HTML</a>
+                            <label for="__nav_2">
+                                <span class="md-nav__icon md-icon"></span>
+                            </label>
+                        </div>
+                        <nav class="md-nav" aria-label="HTML" data-md-level="1">
+                            <label class="md-nav__title" for="__nav_2">
+                                <span class="md-nav__icon md-icon"></span>
+                                HTML
+                            </label>
+                            <ul class="md-nav__list">
+                                <li class="md-nav__item">
+                                    <a href="../uni-attr/" class="md-nav__link">
+                                        Глобальные атрибуты
+                                    </a>
+                                </li>
+                                <li class="md-nav__item md-nav__item--active">
+                                    <input
+                                        class="md-nav__toggle md-toggle"
+                                        data-md-toggle="toc"
+                                        type="checkbox"
+                                        id="__toc"
+                                    />
+                                    <label
+                                        class="md-nav__link md-nav__link--active"
+                                        for="__toc"
+                                    >
+                                        Список MIME-типов
+                                        <span
+                                            class="md-nav__icon md-icon"
+                                        ></span>
+                                    </label>
+                                    <a
+                                        href="./"
+                                        class="md-nav__link md-nav__link--active"
+                                    >
+                                        Список MIME-типов
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a
+                                        target="display-frame"
+                                        href="html/a.html"
+                                    >
+                                        &lt;a&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../abbr/"> &lt;abbr&gt; </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../address/" class="md-nav__link">
+                                        &lt;address&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../area/" class="md-nav__link">
+                                        &lt;area&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../article/" class="md-nav__link">
+                                        &lt;article&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../aside/" class="md-nav__link">
+                                        &lt;aside&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../audio/" class="md-nav__link">
+                                        &lt;audio&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../b/" class="md-nav__link">
+                                        &lt;b&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../base/" class="md-nav__link">
+                                        &lt;base&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../bdi/" class="md-nav__link">
+                                        &lt;bdi&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../bdo/" class="md-nav__link">
+                                        &lt;bdo&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a
+                                        href="../blockquote/"
+                                        class="md-nav__link"
+                                    >
+                                        &lt;blockquote&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../body/" class="md-nav__link">
+                                        &lt;body&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../br/" class="md-nav__link">
+                                        &lt;br&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../button/" class="md-nav__link">
+                                        &lt;button&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../canvas/" class="md-nav__link">
+                                        &lt;canvas&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../caption/" class="md-nav__link">
+                                        &lt;caption&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../cite/" class="md-nav__link">
+                                        &lt;cite&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../code/" class="md-nav__link">
+                                        &lt;code&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../col/" class="md-nav__link">
+                                        &lt;col&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../colgroup/" class="md-nav__link">
+                                        &lt;colgroup&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../data/" class="md-nav__link">
+                                        &lt;data&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../datalist/" class="md-nav__link">
+                                        &lt;datalist&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../dd/" class="md-nav__link">
+                                        &lt;dd&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../del/" class="md-nav__link">
+                                        &lt;del&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../details/" class="md-nav__link">
+                                        &lt;details&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../dfn/" class="md-nav__link">
+                                        &lt;dfn&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../dialog/" class="md-nav__link">
+                                        &lt;dialog&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../div/" class="md-nav__link">
+                                        &lt;div&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../dl/" class="md-nav__link">
+                                        &lt;dl&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../dt/" class="md-nav__link">
+                                        &lt;dt&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../em/" class="md-nav__link">
+                                        &lt;em&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../embed/" class="md-nav__link">
+                                        &lt;embed&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../fieldset/" class="md-nav__link">
+                                        &lt;fieldset&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a
+                                        href="../figcaption/"
+                                        class="md-nav__link"
+                                    >
+                                        &lt;figcaption&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../figure/" class="md-nav__link">
+                                        &lt;figure&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../footer/" class="md-nav__link">
+                                        &lt;footer&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../form/" class="md-nav__link">
+                                        &lt;form&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h1/" class="md-nav__link">
+                                        &lt;h1&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h2/" class="md-nav__link">
+                                        &lt;h2&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h3/" class="md-nav__link">
+                                        &lt;h3&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h4/" class="md-nav__link">
+                                        &lt;h4&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h5/" class="md-nav__link">
+                                        &lt;h5&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../h6/" class="md-nav__link">
+                                        &lt;h6&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../head/" class="md-nav__link">
+                                        &lt;head&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../header/" class="md-nav__link">
+                                        &lt;header&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../hr/" class="md-nav__link">
+                                        &lt;hr&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../html/" class="md-nav__link">
+                                        &lt;html&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../i/" class="md-nav__link">
+                                        &lt;i&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../iframe/" class="md-nav__link">
+                                        &lt;iframe&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../img/" class="md-nav__link">
+                                        &lt;img&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../input/" class="md-nav__link">
+                                        &lt;input&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../ins/" class="md-nav__link">
+                                        &lt;ins&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../kbd/" class="md-nav__link">
+                                        &lt;kbd&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../label/" class="md-nav__link">
+                                        &lt;label&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../legend/" class="md-nav__link">
+                                        &lt;legend&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../li/" class="md-nav__link">
+                                        &lt;li&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../link/" class="md-nav__link">
+                                        &lt;link&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../main/" class="md-nav__link">
+                                        &lt;main&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../map/" class="md-nav__link">
+                                        &lt;map&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../mark/" class="md-nav__link">
+                                        &lt;mark&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../meta/" class="md-nav__link">
+                                        &lt;meta&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../meter/" class="md-nav__link">
+                                        &lt;meter&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../nav/" class="md-nav__link">
+                                        &lt;nav&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../noscript/" class="md-nav__link">
+                                        &lt;noscript&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../object/" class="md-nav__link">
+                                        &lt;object&gt;
+                                    </a>
+                                </li>
+
+                                <li class="md-nav__item">
+                                    <a href="../ol/" class="md-nav__link">
+                                        &lt;ol&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../optgroup/" class="md-nav__link">
+                                        &lt;optgroup&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../option/" class="md-nav__link">
+                                        &lt;option&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../output/" class="md-nav__link">
+                                        &lt;output&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../p/" class="md-nav__link">
+                                        &lt;p&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../param/" class="md-nav__link">
+                                        &lt;param&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../picture/" class="md-nav__link">
+                                        &lt;picture&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../pre/" class="md-nav__link">
+                                        &lt;pre&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../progress/" class="md-nav__link">
+                                        &lt;progress&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../q/" class="md-nav__link">
+                                        &lt;q&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../rb/" class="md-nav__link">
+                                        &lt;rb&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../rp/" class="md-nav__link">
+                                        &lt;rp&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../rt/" class="md-nav__link">
+                                        &lt;rt&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../rtc/" class="md-nav__link">
+                                        &lt;rtc&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../ruby/" class="md-nav__link">
+                                        &lt;ruby&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../s/" class="md-nav__link">
+                                        &lt;s&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../samp/" class="md-nav__link">
+                                        &lt;samp&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../script/" class="md-nav__link">
+                                        &lt;script&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../section/" class="md-nav__link">
+                                        &lt;section&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../select/" class="md-nav__link">
+                                        &lt;select&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../slot/" class="md-nav__link">
+                                        &lt;slot&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../small/" class="md-nav__link">
+                                        &lt;small&gt;
+                                    </a>
+                                </li>
+
+                                <li class="md-nav__item">
+                                    <a href="../source/" class="md-nav__link">
+                                        &lt;source&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../span/" class="md-nav__link">
+                                        &lt;span&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../strong/" class="md-nav__link">
+                                        &lt;strong&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../style/" class="md-nav__link">
+                                        &lt;style&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../sub/" class="md-nav__link">
+                                        &lt;sub&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../summary/" class="md-nav__link">
+                                        &lt;summary&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../sup/" class="md-nav__link">
+                                        &lt;sup&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../table/" class="md-nav__link">
+                                        &lt;table&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../tbody/" class="md-nav__link">
+                                        &lt;tbody&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../td/" class="md-nav__link">
+                                        &lt;td&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../template/" class="md-nav__link">
+                                        &lt;template&gt;
+                                    </a>
+                                </li>
+
+                                <li class="md-nav__item">
+                                    <a href="../textarea/" class="md-nav__link">
+                                        &lt;textarea&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../tfoot/" class="md-nav__link">
+                                        &lt;tfoot&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../th/" class="md-nav__link">
+                                        &lt;th&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../thead/" class="md-nav__link">
+                                        &lt;thead&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../time/" class="md-nav__link">
+                                        &lt;time&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../title/" class="md-nav__link">
+                                        &lt;title&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../tr/" class="md-nav__link">
+                                        &lt;tr&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../track/" class="md-nav__link">
+                                        &lt;track&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../tt/" class="md-nav__link">
+                                        &lt;tt&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../u/" class="md-nav__link">
+                                        &lt;u&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../ul/" class="md-nav__link">
+                                        &lt;ul&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../var/" class="md-nav__link">
+                                        &lt;var&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../video/" class="md-nav__link">
+                                        &lt;video&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../wbr/" class="md-nav__link">
+                                        &lt;wbr&gt;
+                                    </a>
+                                </li>
+                                <li class="md-nav__item">
+                                    <a href="../xmp/" class="md-nav__link">
+                                        &lt;xmp&gt;
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <iframe
+                    name="display-frame"
+                    style="
+                        width: 100%;
+                        height: 600px;
+                        border: 2px solid #4e46e5;
+                    "
+                >
+                </iframe>
+            </div>
+
+            <div class="right" style="background-color: #ddd">
+                <h2>Page Content</h2>
+                <p>
+                    Start to type for a specific category inside the search bar
+                    to "filter" the search options.
+                </p>
+                <p>
+                    Some text..Some text..Some text..Some text..Some text..Some
+                    text..Some text..Some text..
+                </p>
+                <p>
+                    Some other text..Some text..Some text..Some text..Some
+                    text..Some text..Some text..Some text..
+                </p>
+                <p>Some text..</p>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
