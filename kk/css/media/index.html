@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="kk">
+    <head>
+        <title>@media – Brand</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="icon" href="../../images/css/logo.png">
+    </head>
+    <body>
+        <div class="background-color">
+            <div>
+                <dl>
+                    <dd>
+                        CSS-тегі <mark>@media</mark> ережесі операторлардың жиынтығын, CSS блогын жақшалармен шектелген, бұқаралық ақпарат құралдарының сұранысымен анықталған Шартпен байланыстырады. <mark>@media</mark> ережесін CSS-тің жоғарғы деңгейінде ғана емес, сонымен қатар шартты ережелер тобының кез-келген бөлігінде де қолдануға болады.
+                    </dd>
+                    <p>
+                        <dd>
+                        </dd>
+                    </p>
+                </dl>
+            </div>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        @rules and modifiers
+                    </div>
+                    <div class="accordion__body">
+                        <p>
+                            <a href="/css/charset" target="_blank"><mark>@charset</mark></a>
+                            <a href="/css/import" target="_blank"><mark>@import</mark></a>
+                            <a href="/css/namespace" target="_blank"><mark>@namespace</mark></a>
+                            <a href="/css/media" target="_blank"><mark>@media</mark></a>
+                            <a href="/css/supports" target="_blank"><mark>@supports</mark></a>
+                            <a href="/css/document" target="_blank"><mark>@document</mark></a>
+                            <a href="/css/page" target="_blank"><mark>@page</mark></a>
+                            <a href="/css/font-face" target="_blank"><mark>@font-face</mark></a>
+                            <a href="/css/keyframes" target="_blank"><mark>@keyframes</mark></a>
+                            <a href="/css/viewport" target="_blank"><mark>@viewport</mark></a>
+                            <a href="/css/counter-style" target="_blank"><mark>@counter-style</mark></a>
+                            <a href="/css/font-feature-values" target="_blank"><mark>@font-feature-values</mark></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-color">
+            <h1>Syntax</h1>
+            <div class="color-code">
+                <code>
+<pre>
+@media &lt;media-query-list&gt; {
+    &lt;group-rule-body&gt;
+}
+
+где
+&lt;media-query-list&gt; = &lt;media-query&gt;#
+
+где
+&lt;media-query&gt; = &lt;media-condition&gt; | [ not | only ]? &lt;media-type&gt; [ and &lt;media-condition-without-or&gt; ]?
+
+где
+&lt;media-condition&gt; = &lt;media-not&gt; | &lt;media-and&gt; | &lt;media-or&gt; | &lt;media-in-parens&gt;
+&lt;media-type&gt; = &lt;ident>
+&lt;media-condition-without-or&gt; = <media-not&gt; | &lt;media-and&gt; | &lt;media-in-parens&gt;
+
+где
+&lt;media-not> = not &lt;media-in-parens&gt;
+&lt;media-and> = &lt;media-in-parens&gt; [ and &lt;media-in-parens&gt; ]+
+&lt;media-or> = &lt;media-in-parens&gt; [ or &lt;media-in-parens&gt; ]+
+&lt;media-in-parens> = ( <media-condition&gt; ) | &lt;media-feature&gt; | &lt;general-enclosed&gt;
+
+где
+&lt;media-feature> = ( [ &lt;mf-plain&gt; | &lt;mf-boolean&gt; | &lt;mf-range&gt; ] )
+&lt;general-enclosed> = [ &lt;function-token&gt; &lt;any-value&gt; ) ] | ( &lt;ident&gt; &lt;any-value&gt; )
+
+где
+&lt;mf-plain> = &lt;mf-name&gt; : <mf-value&gt;
+&lt;mf-boolean> = &lt;mf-name&gt;
+&lt;mf-range> = &lt;mf-name&gt; [ '&lt;' | '>' ]? '='? <mf-value&gt; | &lt;mf-value&gt; [ '&lt;' | '&lt;' ]? '='? &lt;mf-name&gt; | &lt;mf-value&gt; '<' '='? &lt;mf-name&gt; '<' '='? &lt;mf-value&gt; | &lt;mf-value&gt; '>' '='? &lt;mf-name&gt; '>' '='? &lt;mf-value&gt;
+
+где
+&lt;mf-name> = &lt;ident&gt;
+&lt;mf-value> = &lt;number&gt; | &lt;dimension&gt; | &lt;ident&gt; | &lt;ratio&gt;
+</pre>
+                </code>
+            </div>
+        </div>
+        <div class="background-color">
+            <div>
+                <h1>Түрлері</h1>
+            </div>
+            <div class="all">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>all</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Барлық құрылғылар үшін қолайлы.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+{
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="print">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>print</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Принтерлер.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+{
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="screen">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>screen</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Ең алдымен түрлі-түсті компьютерлік экрандарға арналған.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+{
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="speech">
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <dt>
+                                    <mark>speech</mark>
+                                </dt>
+                            </th>
+                            <th>
+                                <dd>
+                                    Сөйлеу синтезаторларына арналған.
+                                </dd>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="">
+                    <h1>Syntax</h1>
+                    <div class="code">
+                        <code>
+<pre>
+{
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <h1>Мәні</h1>
+                        </th>
+                        <th>
+                            <h1>Әдетті мәні</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Жоқ.
+                        </td>
+                        <td>
+                            Әдепкі бойынша бұл мән өшірулі.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="../../js/css/index.js"></script>
+    </body>
+</html>
