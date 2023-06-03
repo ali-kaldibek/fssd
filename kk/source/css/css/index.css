@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+    --bg-color-body: #15141a;
+    --color-body: #e9eef2;
+    /* #fbfbfe */
+    --bg-color-fon: #2b2a33;
+    --color-code: #b1c2d2;
+    --color-html: #e65c4f;
+    --color-attributes: #41c81c;
+    --font-family-1: "Comfortaa";
+    --font-family-2: "Zen+Kurenaido";
+    --font-family-3: "Trispace";
+}
+body {
+    background-color: var(--bg-color-fon);
+    color: var(--color-body);
+    font-family: var(--font-family-1);
+
+    line-height: 30px;
+}
+#usa {
+    width: 25px;
+}
+.bold {
+    font-weight: bold;
+}
+pre {
+    font-family: var(--font-family-3);
+}
+.background-color {
+    border-radius: 50px;
+    padding: 0.7720588235em 1.1764705882em;
+    background-color: #14131310; /*faf4f410*/
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+mark {
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--color-html);
+    padding: 3px 10px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.color-code {
+    color: var(--color-code);
+    padding: 0.7720588235em 1.1764705882em;
+}
+a {
+    color: var(--color-html);
+}
+a,
+.menu {
+    cursor: pointer;
+}
+a,
+abbr {
+    text-decoration: none;
+}
+.current-tags {
+    color: #cfcfd8;
+}
+.color-html {
+    color: var(--color-html);
+}
+.color-attributes {
+    color: var(--color-attributes);
+}
+figure {
+    float: right;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(82, 58, 58);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 9em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-html);
+}
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:vertical:end:increment {
+    background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+.accordion {
+    width: 100%;
+}
+.accordion__item {
+    margin: 5px;
+}
+.accordion__header {
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.accordion__header::before {
+    content: "+";
+    position: absolute;
+    font-size: 1.5em;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: 0.8s;
+}
+.accordion__body {
+    height: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.8s;
+
+    line-height: 30px;
+    word-spacing: 10px;
+}
+.accordion__item.active .accordion__body {
+    height: 200px;
+}
+.accordion__item.active .accordion__header::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+
+
+
+iframe {
+    width: 100%;
+    height: 1000px;
+    border: 0;
+}
+.table{
+    border-collapse: collapse;
+}
+.table td,
+.table th{
+    border: 1px solid #ccc;
+}
+
+.padding{
+    padding: 50px;
+}
+.margin{
+    margin: 20px;
+}
